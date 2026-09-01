@@ -360,6 +360,60 @@
   border-bottom: 3px solid #667eea;
 }
 
+/* Botón de Inicio */
+.u-home-button-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.u-home-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+}
+
+.u-home-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.u-home-btn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+  transform: translateY(-3px) scale(1.05);
+}
+
+@media (max-width: 767px) {
+  .u-home-button-container {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .u-home-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .u-home-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
     height: auto;
